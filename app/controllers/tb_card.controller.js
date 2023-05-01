@@ -16,7 +16,7 @@ exports.create = (req, res) => {
         sent: req.body.sent
     });
   
-    // Save Tutorial in the database
+    // Save TB_CARD in the database
     TB_CARD.create(tb_card, (err, data) => {
       if (err)
         res.status(500).send({
