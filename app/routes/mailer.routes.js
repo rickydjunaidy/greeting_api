@@ -3,7 +3,8 @@ module.exports = app => {
   
     var router = require("express").Router();
 
-    router.get("/send_mail/:id", MAILER_CONTROLLER.send_mail);
+    router.get("/send_mail/:id", MAILER_CONTROLLER.get_mail);
+    router.post("/send_mail/send", MAILER_CONTROLLER.send_mail);
   
     app.use('/api/mail', router);
   };

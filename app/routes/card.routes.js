@@ -3,7 +3,7 @@ module.exports = app => {
   
     var router = require("express").Router();
   
-    // Create a new Tutorial
+    // Create a new card
     router.post("/create", TB_CARD_CONTROLLER.create);
   
     app.use('/api/card', router);
